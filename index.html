@@ -16,17 +16,17 @@
         <script src="js/vendor/pikaday.js"></script>
 
         <script>
-          var full_name = "Troy Howard";
-          var default_location = "Portland, OR, USA";
-          var default_until = "something comes up";
+          var full_name = "jden";
+          var default_location = "Chattanooga, TN, USA";
+          var default_until = "next time";
           var current_date = new Date().toDateString();
           var schedule = [
-            { "in": "San Francisco, CA, USA", "from": "06/11/2014", "to": "06/16/2014"},
-            { "in": "Hangzhou, China", "from": "06/17/2014", "to": "06/25/2014"},
-            { "in": "San Francisco, CA, USA", "from": "06/26/2014", "to": "07/03/2014"},
-            { "in": "St. Louis, MO, USA", "from": "07/06/2014", "to": "07/13/2014"},
-            { "in": "San Francisco, CA, USA", "from": "07/27/2014", "to": "08/03/2014"},
-          ];
+            { in: 'San Francisco, CA, USA', from: '06/14/2014', to: '06/23/2014'},
+            { in: 'Portland, OR, USA', from: '06/23/2014', to: '06/28/2014'},
+            { in: 'San Francisco, CA, USA', from: '06/28/2014', to: '07/15/2014'},
+            { in: 'San Francisco, CA, USA', from: '07/26/2014', to: '07/30/2014'},
+            { in: 'Portland, OR, USA', from: '07/26/2014', to: '08/03/2014'}
+        ];
         </script>
 
         <script src="js/vendor/handlebars-v1.3.0.js"></script>
@@ -63,7 +63,7 @@
           <h2>Upcoming Trips</h2>
           <div id="schedule"></div>
           <h2>Pick a Date</h2>
-          <h3 id="future_location">On {{current_date}} Troy will be in {{current_location}}</h3>
+          <h3 id="future_location">On {{current_date}} Jason will be in {{current_location}}</h3>
           <div style="display: inline-block">
             <b id="datepicker"></b>
           </div>
@@ -141,14 +141,5 @@
           });
 
           </script>
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-48099279-1', 'thoward37.me');ga('send','pageview');
-        </script>
     </body>
 </html>
